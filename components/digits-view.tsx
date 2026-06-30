@@ -18,8 +18,8 @@ import type {
   ProposalInfo,
   DurationLimits,
   BuyResult,
-} from '@deriv/core';
-import type { ContractMode, TradeType, DigitStats } from '../lib/types';
+import type { TradeType, DigitStats } from '../lib/types';
+import type { ContractMode } from '@deriv/core';
 
 const DIGIT_TRADE_TYPE_OPTIONS: { value: TradeType; label: string }[] = [
   { value: 'matches-differs', label: 'Matches/Differs' },
