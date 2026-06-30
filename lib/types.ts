@@ -26,12 +26,13 @@ export type TradeType =
   | 'rise-fall'
   | 'higher-lower'
   | 'touch-no-touch'
+  | 'ends-between'
+  | 'stays-between'
   | 'accumulator'
   | 'multiplier'
   | 'call-put';
   
 
-export type TradeType = 'matches-differs' | 'over-under' | 'even-odd';
 
 export interface DigitStats {
   /** Count of each digit 0-9 from tick history */
