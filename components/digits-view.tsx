@@ -25,6 +25,35 @@ const DIGIT_TRADE_TYPE_OPTIONS: { value: TradeType; label: string }[] = [
   { value: 'matches-differs', label: 'Matches/Differs' },
   { value: 'over-under', label: 'Over/Under' },
   { value: 'even-odd', label: 'Even/Odd' },
+  const TRADE_TYPE_OPTIONS = [
+  { value: 'matches-differs', label: 'Matches / Differs' },
+  { value: 'over-under', label: 'Over / Under' },
+  { value: 'even-odd', label: 'Even / Odd' },
+
+  // Rise/Fall
+  { value: 'rise-fall', label: 'Rise / Fall' },
+
+  // Higher/Lower
+  { value: 'higher-lower', label: 'Higher / Lower' },
+
+  // Touch/No Touch
+  { value: 'touch-no-touch', label: 'Touch / No Touch' },
+
+  // Ends Between/Outside
+  { value: 'ends-between', label: 'Ends Between' },
+
+  // Accumulator
+  { value: 'accumulator', label: 'Accumulators' },
+
+  // Multipliers
+  { value: 'multiplier', label: 'Multipliers' },
+
+  // Lookbacks
+  { value: 'lookback', label: 'Lookbacks' },
+
+  // Vanilla Options
+  { value: 'call-put', label: 'Call / Put' },
+];
 ];
 
 export interface DigitsViewProps {
@@ -163,9 +192,13 @@ export function DigitsView({
           <>
             <div className="shrink-0 overflow-x-auto pb-0.5 [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
               <TradeTypeChips
-                value={tradeType}
-                options={DIGIT_TRADE_TYPE_OPTIONS}
-                onValueChange={setTradeType}
+    value={tradeType}
+    options={TRADE_TYPE_OPTIONS}
+    onValueChange={setTradeType}
+/>
+                
+                
+      
               />
             </div>
 
