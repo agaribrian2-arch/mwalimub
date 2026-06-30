@@ -19,13 +19,17 @@ export type { PositionFilter } from '@/components/custom/positions-table';
 
 // Digit-specific types
 
-export type ContractMode =
-  | 'DIGITMATCH'
-  | 'DIGITDIFF'
-  | 'DIGITOVER'
-  | 'DIGITUNDER'
-  | 'DIGITEVEN'
-  | 'DIGITODD';
+export type TradeType =
+  | 'matches-differs'
+  | 'over-under'
+  | 'even-odd'
+  | 'rise-fall'
+  | 'higher-lower'
+  | 'touch-no-touch'
+  | 'accumulator'
+  | 'multiplier'
+  | 'call-put';
+  
 
 export type TradeType = 'matches-differs' | 'over-under' | 'even-odd';
 
